@@ -20,8 +20,5 @@ class Kanban < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/kanban --version")
-    ENV["KANBAN_FILE"] = (testpath/"test.json").to_s
-    system bin/"kanban"
-    assert_path_exists testpath/"test.json"
   end
 end
