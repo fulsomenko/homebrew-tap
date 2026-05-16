@@ -1,17 +1,17 @@
-# homebrew-kanban
+# homebrew-tap
 
 Homebrew tap for [kanban](https://github.com/fulsomenko/kanban), a fast keyboard-driven terminal kanban board written in Rust.
 
 ## Install
 
 ```sh
-brew install fulsomenko/kanban/kanban
+brew install fulsomenko/tap/kanban
 ```
 
 Or with an explicit tap:
 
 ```sh
-brew tap fulsomenko/kanban
+brew tap fulsomenko/tap
 brew install kanban
 ```
 
@@ -20,7 +20,7 @@ brew install kanban
 To install from the upstream `develop` branch instead of the latest stable release:
 
 ```sh
-brew install --HEAD fulsomenko/kanban/kanban
+brew install --HEAD fulsomenko/tap/kanban
 ```
 
 ## Updates
