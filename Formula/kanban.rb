@@ -6,13 +6,8 @@ class Kanban < Formula
   license "Apache-2.0"
   head "https://github.com/fulsomenko/kanban.git", branch: "develop"
 
-  depends_on "rust" => :build
   depends_on "pkg-config" => :build
-
-  on_linux do
-    depends_on "wayland"
-    depends_on "libxcb"
-  end
+  depends_on "rust" => :build
 
   def install
     system "cargo", "install", *std_cargo_args(path: "crates/kanban-cli")
