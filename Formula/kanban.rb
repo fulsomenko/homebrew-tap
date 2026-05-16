@@ -16,6 +16,7 @@ class Kanban < Formula
 
   def install
     system "cargo", "install", *std_cargo_args(path: "crates/kanban-cli")
+    system "cargo", "install", *std_cargo_args(path: "crates/kanban-mcp")
   end
 
   test do
