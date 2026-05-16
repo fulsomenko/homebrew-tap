@@ -20,7 +20,7 @@ class Kanban < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/kanban --version")
-    system bin/"kanban", testpath/"test.json", "board", "create", "--name", "BrewTest"
+    system({ "KANBAN_FILE" => testpath/"test.json" }, bin/"kanban", "board", "create", "--name", "BrewTest")
     assert_path_exists testpath/"test.json"
   end
 end
