@@ -1,8 +1,8 @@
 class Kanban < Formula
   desc "Fast, keyboard-driven terminal kanban board"
   homepage "https://github.com/fulsomenko/kanban"
-  url "https://github.com/fulsomenko/kanban/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "4285eaaa9220c87aead5339c6fe9df37fe39dd0956296e5506d7a0d6e110edef"
+  url "https://github.com/fulsomenko/kanban/archive/refs/tags/v0.7.1.tar.gz"
+  sha256 "4127286a2f2fe7c16417a79c70f604f520adf7a004f392d6791764e6e95c520c"
   license "Apache-2.0"
   head "https://github.com/fulsomenko/kanban.git", branch: "develop"
 
